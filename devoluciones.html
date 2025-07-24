@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Política de Devoluciones</title>
+</head>
+<body>
+  <h1>Política de Devoluciones</h1>
+
+  <p>En <strong>Donaciones-Web-ONG</strong>, valoramos profundamente el apoyo de nuestros donantes.</p>
+
+  <p>Si realizaste una donación por error o necesitas solicitar una devolución, por favor completa el siguiente formulario:</p>
+
+  <form method="POST" action="procesar_devolucion.php">
+    <label for="nombre">Nombre completo:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+
+    <label for="correo">Correo electrónico:</label><br>
+    <input type="email" id="correo" name="correo" required><br><br>
+
+    <label for="monto">Monto de la donación (CLP):</label><br>
+    <input type="number" id="monto" name="monto" required><br><br>
+
+    <label for="motivo">Motivo de la devolución:</label><br>
+    <textarea id="motivo" name="motivo" rows="4" cols="40" required></textarea><br><br>
+
+    <input type="submit" value="Solicitar devolución">
+  </form>
+
+  <p><small>Las devoluciones serán evaluadas caso a caso dentro de un plazo de 7 días hábiles.</small></p>
+</body>
+</html>
